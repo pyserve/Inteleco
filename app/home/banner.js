@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 
 const Banner = () => {
     return(
@@ -11,8 +11,12 @@ const Banner = () => {
                         Next AI is at the forefront of artificial intelligence, delivering cutting-edge solutions that drive business transformation. Our expertise in AI empowers organizations to unlock new levels of efficiency, optimize decision-making, and achieve sustainable growth. Partner with Next AI to leverage intelligent, scalable solutions tailored to your business needs and stay ahead in a rapidly evolving digital landscape.
                     </div>
                     <div className="my-1">
-                        <div className="mt-4 me-3 ms-0 btn btn-lg btn-light">Choose Demos</div>
-                        <div className="mt-4 ms-3 me-0 btn btn-lg btn-outline-warning">Explore more</div>
+                        <Link href="/demos">
+                            <div className="mt-4 me-3 ms-0 btn btn-lg btn-light">Choose Demos</div>
+                        </Link>
+                        <Link href="#applications">
+                            <div className="mt-4 ms-3 me-0 btn btn-lg btn-outline-warning">Explore more</div>
+                        </Link>
                     </div>
                 </div>
             </div>

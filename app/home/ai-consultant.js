@@ -4,7 +4,7 @@ const AIConsultant = () => {
     return(
     <div className="container py-4">
         <div className="fs-1 my-2">Free AI Consultations</div>
-        <div className="my-2">
+        <div className="my-2 text-justify">
           As AI consultants, we help businesses adopt and integrate AI to boost innovation and efficiency. Our expertise in AI model development, machine learning, and data analytics allows us to deliver customized solutions tailored to industry needs. We work closely with your team from strategy to implementation, ensuring measurable impact and sustainable growth, helping you stay competitive by enhancing customer experiences, streamlining operations, and enabling data-driven decisions.
         </div>
         <div className="row align-items-center">
@@ -28,6 +28,10 @@ const AIConsultant = () => {
                 </li>
               ))}
             </ul>
+            <div className="my-2">
+              <button className="m-1 btn btn-outline-danger">Explore Potentials</button>
+              <button className="m-1 btn btn-outline-dark">Consult Now</button>
+            </div>
           </div>
         </div>
     </div>

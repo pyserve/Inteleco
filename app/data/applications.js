@@ -140,4 +140,48 @@ export const scopes = [
       ]
     }
   ]
+
+  export const industries = [
+    {
+      "industry": "Healthcare",
+      "description": "AI enhances healthcare by forecasting health issues through predictive models and improving diagnostic accuracy with advanced imaging analysis. It supports early interventions and optimizes treatment plans, revolutionizing patient care."
+    },
+    {
+      "industry": "Finance",
+      "description": "In finance, AI detects fraud by analyzing transaction patterns and predicts market trends through algorithmic trading. These advancements provide robust security and increase trading efficiency, boosting overall profitability."
+    },
+    {
+      "industry": "Retail",
+      "description": "AI personalizes shopping experiences and optimizes inventory management by analyzing customer behavior and predicting product demand. This leads to better customer satisfaction and streamlined supply chain operations."
+    },
+    {
+      "industry": "Manufacturing",
+      "description": "AI improves manufacturing through predictive maintenance and quality control. It anticipates equipment failures to minimize downtime and ensures high-quality products by detecting defects during production."
+    },
+    {
+      "industry": "Transportation and Logistics",
+      "description": "AI facilitates autonomous vehicles and optimizes delivery routes by analyzing traffic and weather conditions. These innovations not only enhance safety, reduce errors, but also improve efficiency in logistics operations."
+    },
+    {
+      "industry": "Energy",
+      "description": "AI transforms energy management with smart grids and predictive analytics. It optimizes energy distribution, integrates renewable sources, and enhances equipment reliability, leading to more efficient power generation."
+    },
+    {
+      "industry": "Agriculture",
+      "description": "AI boosts agriculture with precision farming and drone-based crop monitoring. It analyzes soil health and weather conditions to increase crop yield while enabling real-time pest detection and targeted interventions."
+    },
+    {
+      "industry": "Telecommunications",
+      "description": "AI enhances telecommunications by optimizing network performance and automating customer support. It predicts network traffic and manages bandwidth, improving service quality and operational efficiency."
+    },
+    {
+      "industry": "Education",
+      "description": "AI transforms education with adaptive learning platforms and automated grading. It personalizes student learning experiences and reduces educators' workload by providing instant feedback on assignments."
+    },
+    {
+      "industry": "Entertainment",
+      "description": "AI revolutionizes entertainment through personalized content recommendations and automated content creation. It enhances user engagement by suggesting relevant content and generating creative media."
+    }
+  ]
+  
   

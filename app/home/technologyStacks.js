@@ -4,7 +4,7 @@ const TechnologyStacks = () => {
         <div className="row align-items-center">
           <div className="col-md-6 order-2 order-md-1">
             <div className="fs-1 my-2">Technology Stacks</div>
-            <div className="my-2">
+            <div className="my-2 text-justify">
               Our AI and ML consulting services are powered by cutting-edge tools, frameworks, and platforms such as TensorFlow, PyTorch, and scikit-learn. We leverage cloud-based solutions like AWS, Azure AI, and Google Cloud to ensure scalability and efficiency. In line with the latest advancements, we incorporate state-of-the-art innovations such as OpenAI's GPT models and Meta's LLaMA, enabling us to deliver next-generation AI solutions tailored to your business needs.
             </div>
             <div className="mt-4">

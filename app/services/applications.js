@@ -1,11 +1,11 @@
-import { scopes } from "../variables/applications";
+import { scopes } from "../data/applications";
 
 const Applications = () => {
     return(
-    <div className="" id="">
-        <div className="container">
+    <div className="" id="applications">
+        <div className="container py-4">
             <div className="fs-1">AI & ML Applications Across Industries</div>
-            <div className="">
+            <div className="text-justify">
                 Explore how AI and ML are revolutionizing industries, from healthcare and finance to manufacturing and education, by driving innovation, enhancing efficiency, and opening new possibilities across diverse sectors.
             </div>
             <div className="row align-items-stretch pt-5">
@@ -21,11 +21,11 @@ const Applications = () => {
                     <div className="card-header bg-light text-dark fs-4 py-2">
                         <div className="ms-2 text-center">{scope.industry}</div>
                     </div>
-                    <div className="card-body list-unstyled p-3 rounded list-background">
+                    <div className="card-body list-unstyled p-3 rounded border-bottom">
                         {scope.applications.map((app, idx) => (
                         <li key={idx} className="mb-3">
-                            <strong className="text-dark-purple fs-6">{idx+1}. {app.name}:</strong> 
-                            <span className="ms-1">{app.description}</span>
+                            <strong className="text-dark fs-6">{idx+1}. {app.name}:</strong> 
+                            <div className="ms-1 text-justify small">{app.description}</div>
                         </li>
                         ))}
                     </div>

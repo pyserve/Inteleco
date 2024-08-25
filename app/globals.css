@@ -28,22 +28,6 @@
   border-bottom-right-radius: 5% 5%;
 }
 
-#applications{
-  background: url("/img/banners/banner.jpg");
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-top-left-radius: 33.33% 33.33%;
-  border-top-right-radius: 1% 1%;
-}
-
-#get-in-touch{
-  background: url("/img/banners/banner.jpg");
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .list-background{
   background: url("/img/lists/list2.jpg");
   width: 100%;
@@ -67,6 +51,22 @@
 
 .resource-image{
   height: 260px;
+}
+
+.team-img{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.blog-img{
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 @media(max-width: 720){
