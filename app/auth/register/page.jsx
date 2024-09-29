@@ -1,6 +1,6 @@
 import Navbar from "../../home/navbar";
 import Link from "next/link";
-import { register } from "../../lib/auth";
+import { registerUser } from "../../lib/auth";
 
 export default function RegisterPage(){
     return(

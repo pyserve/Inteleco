@@ -3,6 +3,7 @@ import Footer from "../home/footer";
 import Industries from "./industries";
 import GetInTouch from "../home/getinTouch";
 import { consultations } from "../data/consultation";
+import Image from "next/image";
 
 export default function AIConsultation () {
     return(
@@ -17,7 +18,11 @@ export default function AIConsultation () {
                 </div>
                 <div className="row align-items-center">
                     <div className="col-md-5 my-2">
-                        <img src="/img/consultation/whyus.jpg" alt="" className="w-100" />
+                        <img
+                            src="/img/consultation/whyus.jpg"
+                            alt="Why Us"
+                            className="w-100 h-100 rounded"
+                        />
                     </div>
                     <div className="col-md-7 my-2">
                         <div className="fs-1 my-2">Your Trusted Partner for Business Transformation</div>
