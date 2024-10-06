@@ -1,8 +1,21 @@
-import { events } from "../data/events";
+// import { events } from "../data/events";
 import { resources } from "../data/resources";
 
-const EventResource = () => {
-    return(
+const EventResource = async () => {
+  const res = await fetch("http://localhost:3000/api/events");
+  let events = [];
+  if(res.status === 200){
+    events = await res.json();
+  }
+  const formatDate = (timestamp) => {
+    const dateObject = new Date(timestamp);
+    const dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
+    const formattedDate = dateObject.toLocaleDateString('en-US', dateOptions);
+    const timeOptions = { hour: 'numeric', minute: 'numeric', hour12: true };
+    const formattedTime = dateObject.toLocaleTimeString('en-US', timeOptions);
+    return `${formattedDate} - ${formattedTime}`;
+  };
+  return(
     <div className="container py-4">
         <div className="fs-1">AI & ML Events/Resources</div>
         <div>
@@ -14,7 +27,7 @@ const EventResource = () => {
           {events.map((event, idx) => (
             <li className="row justify-content-between align-items-center border" key={idx}>
               <div className="col-md-10 row align-items-center">
-                <div className="col-md-4"><img src={"/img/events/" + event.image + ".jpg"} className="w-100" /></div>
+                <div className="col-md-4"><img src={"/img/events/" + event.image} className="w-100" /></div>
                 <div className="col-md-8">
                   <div className="fw-bold">{event.title}</div>
                   <div className="py-1 text-justify">{event.description}</div>
@@ -24,7 +37,7 @@ const EventResource = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-2 py-2"><span className="badge bg-dark rounded-pill">{event.date}</span></div>
+              <div className="col-md-2 py-2"><span className="badge bg-dark rounded-pill">{formatDate(event?.date)}</span></div>
             </li>
           ))}
         </ol>
@@ -36,7 +49,7 @@ const EventResource = () => {
         <div className="my-2">
           <div className="row">
             {resources.map((resource, idx) => (
-              <div key={idx} className="col-md-4">
+              <div key={idx} className="col-md-4 my-1">
                 <div className="card card-body h-100">
                   <img src={"/img/events/" + resource.image + ".jpg"} className="w-100 resource-image" />
                   <div className="fs-5 mt-3">{resource.title}</div>

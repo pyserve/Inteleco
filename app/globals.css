@@ -1,3 +1,5 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 :root {
   --background: #F4EFFA;  /* Light background color */
   --border: #2F184B;      /* Dark border color */

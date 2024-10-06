@@ -1,6 +1,15 @@
-import { scopes } from "../data/applications";
+import React from 'react';
 
-const Applications = () => {
+const Applications = async () => {
+    const res = await fetch('http://localhost:3000/api/scopes', {
+        method: 'GET',
+    });
+    
+    let data = []
+    if(res.status === 200){
+        data = await res.json();
+    }
+
     return(
     <div className="" id="applications">
         <div className="container py-4">
@@ -9,7 +18,7 @@ const Applications = () => {
                 Explore how AI and ML are revolutionizing industries, from healthcare and finance to manufacturing and education, by driving innovation, enhancing efficiency, and opening new possibilities across diverse sectors.
             </div>
             <div className="row align-items-stretch pt-5">
-                {scopes.map((scope, idx) => idx < 9 && (
+                {data.map((scope, idx) => idx < 9 && (
                 <div className="col-md-4 my-3" key={idx}>
                     <div className="card h-100 shadow-lg border-0 rounded">
                     <div className="position-relative">

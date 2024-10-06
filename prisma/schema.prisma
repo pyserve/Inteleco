@@ -1,0 +1,82 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  registeredEvents Event[] @relation("EventRegisteredUsers")
+  demos     Demo[]   @relation("DemoAuthors")
+  blogs     Blog[]   @relation("BlogAuthors")
+}
+
+model Scope {
+  id          Int       @id @default(autoincrement())
+  industry    String
+  image       String
+  applications Application[]
+}
+
+model Application {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String
+  scopeId     Int
+  scope       Scope    @relation(fields: [scopeId], references: [id])
+}
+
+model Industry {
+  id          Int      @id @default(autoincrement())
+  industry    String
+  description String
+}
+
+model Event {
+  id          Int       @id @default(autoincrement())
+  image       String
+  title       String
+  description String
+  date        DateTime
+  registeredUsers User[] @relation("EventRegisteredUsers")
+}
+
+model Demo {
+  id          Int      @id @default(autoincrement())
+  tags        String[] // List of strings for tags
+  title       String   // Title of the demo
+  description String   // Description of the demo
+  solutions   String[] // List of strings for business solutions
+  authors     User[]   @relation("DemoAuthors") // List of authors (User model)
+  industry    String[] // List of strings for industries
+  image       String
+}
+
+model Blog {
+  id          Int      @id @default(autoincrement())
+  title       String   // Title of the blog post
+  content     String   // Main content of the blog post
+  tags        String[] // List of strings for tags associated with the blog
+  authorId    Int      // Foreign key reference to User model
+  author      User     @relation("BlogAuthors", fields: [authorId], references: [id]) // Reference to the author (User model)
+  publishedAt DateTime @default(now()) // Publication date with default as current date
+  updatedAt   DateTime @updatedAt // Date of the last update
+  isPublished Boolean  @default(false) // Indicates if the blog is published
+  category    String   // Category of the blog post
+  image       String
+}

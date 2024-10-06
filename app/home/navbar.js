@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from 'next/navigation'
 import Link from 'next/link';
-// import 'bootstrap/dist/js/bootstrap.bundle';
+import BootstrapLoader from "../lib/bootstrap.js";
 
 export default function Navbar(){
   const pathname = usePathname();
@@ -10,13 +10,17 @@ export default function Navbar(){
     return pathname === path ? 'active' : '';
   };
   return(
+    <>
+    <BootstrapLoader />
     <div className="navbar navbar-expand-md navbar-dark bg-dark py-3 sticky-top">
         <div className='container'>
             <Link href='/' className='navbar-brand'>
               <img 
-                src={"/img/logos/svg/logo-no-background.svg"} 
-                alt={process.env.APP_NAME} 
-                className="rounded brand-image"/>
+                src={"/img/icons/brand.png"} 
+                // alt={process.env.APP_NAME} 
+                className="rounded-circle brand-image"
+                style={{width: "50px", height: "50px"}}
+              />
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenus" 
               aria-controls="navbarMenus" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,5 +69,6 @@ export default function Navbar(){
             </div>
         </div>
       </div>
+    </>
     )
 }
