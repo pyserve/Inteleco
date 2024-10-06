@@ -1,8 +1,8 @@
-// import { events } from "../data/events";
 import { resources } from "../data/resources";
+import { API_URL } from "../constants";
 
 const EventResource = async () => {
-  const res = await fetch("http://localhost:3000/api/events");
+  const res = await fetch(API_URL + "api/events");
   let events = [];
   if(res.status === 200){
     events = await res.json();

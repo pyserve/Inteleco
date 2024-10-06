@@ -1,7 +1,8 @@
 import React from 'react';
+import { API_URL } from '../constants/index';
 
 const Applications = async () => {
-    const res = await fetch('http://localhost:3000/api/scopes', {
+    const res = await fetch(API_URL + 'api/scopes', {
         method: 'GET',
     });
     
