@@ -36,7 +36,7 @@ export default function OurTeam() {
             <div className="card card-body h-100 text-center">
               <div className="">
                 <img
-                  src={"./img/teams/" + member.image + ".jpg"}
+                  src={"/img/teams/" + member.image + ".jpg"}
                   alt={member.name}
                   className="team-img shadow-lg rounded-circle p-1"
                 />

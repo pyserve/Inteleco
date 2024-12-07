@@ -21,7 +21,7 @@ export const members = [
   },
   {
     "name": "Nischal Shrestha ",
-    "image": "Nischal Shrestha",
+    "image": "nischal shrestha",
     "title": "Co-founder",
     "description": "Nischal is a highly accomplished professional with 4 years of experience in research, IT, and telecommunications. He has spent his career with Weaver Eco Home as software developer. Currently, she is an postgraduate from Loyalist College, Toronto, in the applicability of Network engineering in real world business problems.",
     "social_media": {
@@ -31,7 +31,7 @@ export const members = [
   },
   {
     "name": "Prabin Shrestha",
-    "image": "Prabin Shrestha",
+    "image": "prabin shrestha",
     "title": "Co-founder",
     "description": "For over 3 years, prabin has been involved in designing, architecting, and implementing complex information systems. He has served as a Tech Lead and in C-level roles, bringing a wealth of experience in leading and managing technical teams in the development of sophisticated software solutions. He also has a great experience in AI and ML.",
     "social_media": {
