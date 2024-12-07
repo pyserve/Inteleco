@@ -3,7 +3,7 @@ export const members = [
     "name": "Anil Dhakal",
     "image": "anil dhakal",
     "title": "Co-founder, President",
-    "description": "For over 5 years and more, Anil's career has focused on mitigating software engineering risks in large-scale software systems (mainly at IBM and Roche). He is an AI & ML graduate from Lambton College in Toronto, Canada. He holds a Bachelor's degree in Electronics and Communication Engineering from the Tribhuvan University of Nepal.",
+    "description": "For over 5 years and more, Anil's career has focused on mitigating software engineering risks in large-scale software systems. He is an AI & ML graduate from Lambton College in Toronto, Canada. He holds a Bachelor's degree in Electronics and Communication Engineering from the Tribhuvan University of Nepal.",
     "social_media": {
       "LinkedIn": "https://www.linkedin.com/in/anil-dhakal-380507176/",
       "Twitter": "https://twitter.com/anildhakal"
@@ -20,23 +20,23 @@ export const members = [
     }
   },
   {
-    "name": "Suruchi Pokhrel ",
-    "image": "suruchi pokhrel",
+    "name": "Nischal Shrestha ",
+    "image": "Nischal Shrestha",
     "title": "Co-founder",
-    "description": "Suruchi is a highly accomplished professional with 4 years of experience in research, IT, and telecommunications. She has spent his career with Ekbana as a Solution Architect. Currently, she is an postgraduate from Lambton College, Toronto, in the applicability of Machine Learning in real world business problems.",
+    "description": "Nischal is a highly accomplished professional with 4 years of experience in research, IT, and telecommunications. He has spent his career with Weaver Eco Home as software developer. Currently, she is an postgraduate from Loyalist College, Toronto, in the applicability of Network engineering in real world business problems.",
     "social_media": {
-      "LinkedIn": "https://www.linkedin.com/in/suruchi--pokhrel/",
-      "Twitter": "https://twitter.com/suruchipokhrel"
+      "LinkedIn": "https://www.linkedin.com/in/nishchal-stha/",
+      "Twitter": "https://twitter.com/nischalshrestha"
     }
   },
   {
-    "name": "Raju Pandit",
-    "image": "raju pandit",
+    "name": "Prabin Shrestha",
+    "image": "Prabin Shrestha",
     "title": "Co-founder",
-    "description": "For over 3 years, Raju has been involved in designing, architecting, and implementing complex information systems. He has served as a Tech Lead and in C-level roles, bringing a wealth of experience in leading and managing technical teams in the development of sophisticated software solutions. He also has a great experience in AI and ML.",
+    "description": "For over 3 years, prabin has been involved in designing, architecting, and implementing complex information systems. He has served as a Tech Lead and in C-level roles, bringing a wealth of experience in leading and managing technical teams in the development of sophisticated software solutions. He also has a great experience in AI and ML.",
     "social_media": {
-      "LinkedIn": "https://www.linkedin.com/in/raju-pandit09/",
-      "Twitter": "https://twitter.com/rajupandit"
+      "LinkedIn": "https://www.linkedin.com/in/shrestha-prabin/",
+      "Twitter": "https://twitter.com/prabinshrestha"
     }
   }
 ]
